@@ -1,0 +1,203 @@
+<html>
+
+<head>
+    <title>Email Signature</title>
+    <script src="https://kit.fontawesome.com/29255f834a.js" crossorigin="anonymous"></script>
+    <style>
+        
+        *{
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            text-transform: capitalize;
+        }
+        
+        /*.container{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(#333 50%, #333 50%);
+        }*/
+        
+        .container .email_signature{
+            width: 700px;
+            display: flex;
+            align-content: center;
+            background-image: linear-gradient(#222 50%, #222 50%);
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px;
+            padding: 10px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container .email_signature .image{
+            padding: 45px 0px;
+        }
+        
+        .container .email_signature .image img{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #404D67;
+            box-shadow: 0px 0px 3px #333;
+            position: relative;
+        }
+        
+        .container .email_signature .image::before{
+            content: '';
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            right: 70%;
+            top: -25px;
+            background: #f0f0f0;
+            border-radius: 50%;
+            box-shadow: 20px 0px 0px #404D67;
+        }
+        
+        .container .email_signature .content{
+            padding-left: 60px;
+        }
+        
+        .container .email_signature .content .name{
+            padding-left: 10px;
+            font-size: 25px;
+            color: #f0f0f0;
+        }
+        
+        .container .email_signature .content .post{
+            font-size: 15px;
+            padding: 10px 5px;
+            margin: 10px 5px;
+            border-radius: 50px;
+            background: #ccc;
+            color: #333;
+            text-align: center;
+        }
+        
+        .container .email_signature .content .contact{
+            margin-top: 30px;
+        }
+
+        .container .email_signature .content .contact li{
+            list-style: none;
+            margin: 10px 0px;
+            color: #ccc;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        
+        .container .email_signature .content .contact li img{
+            height: 20px;
+            width: 20px;
+            margin-top: 10px;
+            border-radius: 50%;
+            text-align: center;
+            background: #404D67;
+            margin-right: 10px;
+        }
+        
+        .container .email_signature .content .icon{
+            position: absolute;
+            top: 50%;
+            right: 25px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-flow: column;
+        }
+        
+        .container .email_signature .content .icon a{
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            background: #404D67;
+            border-radius: 50%;
+            color: #fff;
+            margin: 5px 0px;
+        }
+        
+        .container .email_signature .content .icon a:hover{
+            background: #333;
+            transition: 0.2s;
+        }
+
+        .container .email_signature .content .icon a img{
+            width: 19px;
+            height: 19px;
+            margin-top: 7px;
+        }
+        
+        @media (max-width:700px){
+            .container .email_signature{
+                flex-flow: column;
+                width: 90%;
+            }
+            .container .email_signature .image:before{
+                width: 100%;
+                box-shadow: 0px 15px 0px #404D67;
+                top: -25%;
+                left: 0px;
+            }
+            .container .email_signature .content{
+                width: 100%;
+                text-align: center;
+                padding: 50px 0px;
+            }
+            .container .email_signature .content .contact li{
+                text-align: left;
+            }
+            .container .email_signature .content .icon{
+                top: 93%;
+                right: 0px;
+                width: 100%;
+                flex-flow: row;
+                justify-content: center;
+            }
+            .container .email_signature .content .icon a{
+                margin: 0px 5px;
+            }
+            .container .email_signature .image{
+                padding: 0px 0px;
+                margin: auto;
+            }
+            .container .email_signature .image:before{
+                width: 70%;
+                left: 15%;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+       <span class="email_signature">
+        <div class="image">
+            <img src="https://i.postimg.cc/7Zsy3yx7/profile.jpg" alt="">
+        </div>
+        <div class="content">
+            <h1 class="name">Your Name</h1>
+            <h3 class="post">web designer / developer</h3>
+            <ul class="contact">
+                <li><img src="https://i.postimg.cc/50Y1N9Fp/call.jpg">+910000000</li>
+                <li><img src="https://i.postimg.cc/NjK5rtT9/envelope.png">user@xyz.com</li>
+                <li><img src="https://i.postimg.cc/ZqT7bwXq/map.png">Adress</li>
+            </ul>
+            <div class="icon">
+            <a href="#"><img src="https://i.postimg.cc/XYnTh1Yb/fb.png"></a>
+            <a href="#"><img src="https://i.postimg.cc/VkP5rCW6/tt.png"></a>
+            <a href="#"><img src="https://i.postimg.cc/0NvXrc4N/it.png"></a>
+            <a href="#"><img src="https://i.postimg.cc/ZqrRxKjc/ln.png"></a>
+            </div>
+        </div>
+       </span>
+    </div>
+</body>
+
+</html>
